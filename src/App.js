@@ -8,6 +8,9 @@ export default function App() {
         <h1>Dictionary App</h1>
         <img src={logo} className="app-logo img-fluid" alt="logo" />
       </header>
+      <a href="#" className="btn btn-primary">
+        Hello
+      </a>
     </div>
   );
 }
