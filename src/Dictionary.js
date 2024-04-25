@@ -9,7 +9,7 @@ export default function Dictionary() {
 
   function handleResponse(response) {
     console.log(response);
-    setwordData(response.data.word);
+    setwordData(response.data);
   }
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
