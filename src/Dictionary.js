@@ -14,6 +14,7 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
+      <h4 className="mb-5"> What word do you want to look up?</h4>
       <form onSubmit={search}>
         <input type="search" autoFocus={true} onChange={handleKeywordChange} />
         <input type="submit" />
