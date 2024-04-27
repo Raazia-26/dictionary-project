@@ -24,10 +24,17 @@ export default function Dictionary() {
   return (
     <div className="Dictionary">
       <h4 className="mb-5"> What word do you want to look up?</h4>
-      <form onSubmit={search}>
-        <input type="search" autoFocus={true} onChange={handleKeywordChange} />
-        <input className="ms-3" type="submit" />
-      </form>
+      <section>
+        <form onSubmit={search}>
+          <input
+            className="search_txt"
+            type="search"
+            autoFocus={true}
+            onChange={handleKeywordChange}
+          />
+          <input className="btn btn-outline-primary ms-3" type="submit" />
+        </form>
+      </section>
       <WordDefinition data={wordData} />
     </div>
   );

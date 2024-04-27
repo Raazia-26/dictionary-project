@@ -5,13 +5,15 @@ export default function WordDefinition(props) {
   if (props.data) {
     return (
       <div className="WordDefinition">
-        <h1> {props.data.word}</h1>
-        <h5> {props.data.phonetic}</h5>
+        <section>
+          <h1> {props.data.word}</h1>
+          <h5> {props.data.phonetic}</h5>
+        </section>
         {props.data.meanings.map(function (meaning, index) {
           return (
-            <div key={index}>
+            <section key={index}>
               <Meaning meaning={meaning} />
-            </div>
+            </section>
           );
         })}
       </div>
